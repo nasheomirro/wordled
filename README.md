@@ -1,38 +1,10 @@
-# create-svelte
+# wordled
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+It's a wordle clone made with svelte, the twist here is that you can play as much as you like, and the app keeps track of previous words you've found and their descriptions on local storage. We also have different modes:
 
-## Creating a project
+- **survival**: You get 2 lives, each word you guess will be 1 point, get as far as you can!
+- **timed**: You're on the clock, guess as many words as you can before time rans out!
+- **context-clued**: Like survival, but you have fewer guesses and a phrase that uses the word you're guessing, censored of course.
+- **zen**: no lives, no time, just casually playing wordled and learning about new words.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+For each mode, you can also select if you want 5, 6 or 7 letter words. The scoreboard will be separated for each.
